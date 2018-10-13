@@ -1,5 +1,5 @@
 import {Scene} from 'phaser';
-import Jacob from '../sprites/Jacob';
+import Eater from '../sprites/Eater';
 import FallingObject from '../sprites/FallingObject';
 
 const MISS_LIMIT = 3;
@@ -32,7 +32,7 @@ class GameScene extends Scene {
         });
 
         this.x = this.width / 2;
-        this.jacob = new Jacob({
+        this.jacob = new Eater({
             scene: this,
             key: 'jacob',
             x: this.x,

@@ -1,6 +1,6 @@
 import {Scene, Display, SPACE} from 'phaser';
 import {calculateSize} from '../game';
-import Jacob from '../sprites/Jacob';
+import Eater from '../sprites/Eater';
 
 /**
  * The title scene is presented to the user first and gives them
@@ -36,7 +36,7 @@ class TitleScene extends Scene {
         this.input.on('pointerdown', (pointer) => {
             this.start = true;
         });
-        this.jacob = new Jacob({
+        this.jacob = new Eater({
             scene: this,
             key: 'jacob',
             x: width / 2,
