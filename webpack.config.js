@@ -1,6 +1,5 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
@@ -30,7 +29,7 @@ module.exports = {
         },
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin([{from: 'assets'}]),
         new HtmlWebpackPlugin({
             title: 'Jacob Loves Ding Dongs',
