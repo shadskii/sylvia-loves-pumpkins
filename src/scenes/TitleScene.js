@@ -38,7 +38,7 @@ class TitleScene extends Scene {
         });
         this.jacob = new Eater({
             scene: this,
-            key: 'jacob',
+            key: 'eater',
             x: width / 2,
             y: height,
         });

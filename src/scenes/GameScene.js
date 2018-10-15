@@ -34,7 +34,7 @@ class GameScene extends Scene {
         this.x = this.width / 2;
         this.jacob = new Eater({
             scene: this,
-            key: 'jacob',
+            key: 'eater',
             x: this.x,
             y: this.height,
         });
@@ -96,7 +96,7 @@ class GameScene extends Scene {
         this.dicks.add(
             new FallingObject({
                 scene: this,
-                key: 'dick',
+                key: 'object',
                 x: this.enemySpawnXValue(),
                 y: -this.height / 4,
             })
