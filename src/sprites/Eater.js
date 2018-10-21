@@ -3,7 +3,7 @@ import Phaser from 'phaser';
 /**
  * Girl that loves pumpkins.
  */
-export default class Jacob extends Phaser.GameObjects.Sprite {
+export default class Eater extends Phaser.GameObjects.Sprite {
     constructor(config) {
         super(config.scene, config.x, config.y, config.key);
         config.scene.physics.world.enable(this);
