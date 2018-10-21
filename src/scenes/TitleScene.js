@@ -13,7 +13,7 @@ class TitleScene extends Scene {
     create() {
         const {width, height} = calculateSize();
         this.scene.bringToTop();
-        this.add.image(width / 2, height / 2, 'water').setScale(10, 2);
+        this.add.image(0, 0, 'water').setScale(1, 1);
         this.platforms = this.physics.add.staticGroup();
         this.platforms
             .create(0, height, 'ground')

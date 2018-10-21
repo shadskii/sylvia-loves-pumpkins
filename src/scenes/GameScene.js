@@ -17,12 +17,12 @@ class GameScene extends Scene {
         this.width = this.sys.game.config.width;
         this.height = this.sys.game.config.height;
 
-        this.add.image(this.width / 2, this.height / 2, 'water').setScale(10, 2);
+        this.add.image(0, 0, 'water').setScale(1, 1);
         this.platforms = this.physics.add.staticGroup();
-        this.platforms
-            .create(0, this.height, 'ground')
-            .setScale(10, 0.5)
-            .refreshBody();
+        // this.platforms
+        //     .create(0, this.height, 'ground')
+        //     .setScale(10, 0.5)
+        //     .refreshBody();
 
         this.score = 0;
         this.numMissed = 0;

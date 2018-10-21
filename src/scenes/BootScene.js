@@ -9,7 +9,7 @@ class BootScene extends Scene {
     }
 
     preload() {
-        this.load.image('water', 'images/water.png');
+        this.load.image('water', 'images/background.png');
         this.load.image('ground', 'images/sandy-bottom.png');
         this.load.image('object', 'images/pumpkin.png');
         this.load.image('eater', 'images/sylvia.png');

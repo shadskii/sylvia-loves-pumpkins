@@ -18,7 +18,7 @@ export default class GameOverScene extends Scene {
         let height = canvas.height;
 
         this.scene.bringToTop();
-        this.add.image(width / 2, height / 2, 'water').setScale(10, 2);
+        this.add.image(0, 0, 'water').setScale(1, 1);
         this.add.image(width / 2, height / 2, 'awk-seal').setScale(0.15, 0.15);
         this.scoreText = this.add.text(0, 0, this.score, {
             fontSize: width / 5 + 'px',
