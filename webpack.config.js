@@ -32,7 +32,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new CopyWebpackPlugin([{from: 'assets'}]),
         new HtmlWebpackPlugin({
-            title: 'Jacob Loves Ding Dongs',
+            title: 'Sylvia Loves Pumpkins',
             template: 'src/index.html',
         }),
         new webpack.ProvidePlugin({
