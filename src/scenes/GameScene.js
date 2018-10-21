@@ -19,10 +19,6 @@ class GameScene extends Scene {
 
         this.add.image(0, 0, 'water').setScale(1, 1);
         this.platforms = this.physics.add.staticGroup();
-        // this.platforms
-        //     .create(0, this.height, 'ground')
-        //     .setScale(10, 0.5)
-        //     .refreshBody();
 
         this.score = 0;
         this.numMissed = 0;
@@ -42,19 +38,19 @@ class GameScene extends Scene {
         this.dicks = this.add.group();
 
         this.time.addEvent({
-            delay: 400,
+            delay: 500,
             callback: () => this.addDickBetween(0, 20),
             callbackScope: this,
             loop: true,
         });
         this.time.addEvent({
-            delay: 200,
+            delay: 250,
             callback: () => this.addDickBetween(20, 150),
             callbackScope: this,
             loop: true,
         });
         this.time.addEvent({
-            delay: 160,
+            delay: 190,
             callback: () => this.addDickBetween(150, 100000000000),
             callbackScope: this,
             loop: true,
